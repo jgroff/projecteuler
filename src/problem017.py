@@ -30,7 +30,6 @@ _numWordDict = {
     1000 : "thousand"
 }
 
-
 def solveProblem017():
     """ Solves Project Euler Problem 017 """
     lens = {k:len(v) for (k,v) in _numWordDict.items()}
