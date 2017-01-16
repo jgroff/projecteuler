@@ -27,11 +27,6 @@ def findHighestNumberTrianglePath(data):
 
 def solveProblem018():
     """ Solves Project Euler Problem 018 """
-    f = open("../problemdata/data018.txt", 'r')
-    data = readNumberTriangle(f)
-    f.close()
-    n = findHighestNumberTrianglePath(data)
-    print("The highest value traversing the triangle is %s" % (n, ))
 
 if __name__ == "__main__":
     solveProblem018()
