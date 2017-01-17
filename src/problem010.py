@@ -1,7 +1,8 @@
-from util.primes import getPrimes
+from util.primes import getPrimes, generateMorePrimes
 
 def solveProblem010():
     """ Solves Project Euler Problem 010 """
+    generateMorePrimes(2100000)
     sum = 0
     n = 0
     prime = getPrimes()
