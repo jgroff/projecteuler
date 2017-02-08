@@ -67,7 +67,10 @@ def getPrimeRange(start, stop):
     """ Gets primes within the specified range. """
     global _primes
     first = next(i for (i, v) in enumerate(_primes) if v >= start)
-    last = next(i for (i, v) in enumerate(_primes) if v > stop)
+    try:
+        last = next(i for (i, v) in enumerate(_primes) if v > stop)
+    except StopIteration:
+        last = len(_primes) - 1
     return _primes[first : last]
 
 def generateMorePrimes(n):
