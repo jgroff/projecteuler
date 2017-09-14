@@ -16,5 +16,8 @@ def getProperDivisors(n):
     # dead implementation)
     divs = list(set(divs))
     # remove n itself.
-    divs.remove(n)
+    try:
+        divs.remove(n)
+    except ValueError:
+        pass
     return divs

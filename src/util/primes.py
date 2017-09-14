@@ -12,6 +12,7 @@ def __generatePrimes(maxPrimeVal=MAX_PRIME_VAL):
     # NOTE: Performance of the implementation if ths sieve can still be
     # improved.
     global _primes
+    _primes = [2, 3, 5]
     isPrime = [False] * (maxPrimeVal + 1)
     for x in range(1, int(ceil(sqrt(maxPrimeVal + 1)))):
         for y in range(1, int(ceil(sqrt(maxPrimeVal + 1)))):
